@@ -4,49 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entry 5: Black</title>
+    <title>Entry 3: Pink</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto Mono', monospace;
-            margin: 50px;
-            background-color: whitesmoke;
-            font-size: 2.5em;
+            margin: 20px;
+            background-color: #f9f9f9;
         }
 
         h1 {
             text-align: center;
             color: #333;
+            font-size: 2em;
         }
 
         .catalog {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            /* Equal spacing */
+            padding: 10px;
         }
 
         .catalog-item {
-            border: 0px solid #ccc;
-            padding: 90px;
+            flex: 1;
+            /* Each item will take equal space */
+            margin: 0 10px;
+            /* Space between items */
+            padding: 10px;
             text-align: center;
+
         }
 
         img {
-            max-width: 400%;
+            max-width: 100%;
             height: auto;
-            align-items: center;
         }
 
         .number {
-            font-size: 1em;
+            font-size: 1.5em;
             font-weight: bold;
-            align-items: first baseline
         }
     </style>
 </head>
 
 <body>
-    <h1>Entry 4: Pink</h1>
+    <h1>Entry 3: Pink</h1>
     <div class="catalog">
         <div class="catalog-item">
             <div class="number">1.</div>
@@ -54,11 +57,11 @@
         </div>
         <div class="catalog-item">
             <div class="number">2.</div>
-            <img src="/entries/entry3/img3/pinkdrink.png" alt="Item 2">
+            <img src="/entries/entry3/img3/pinkradish.png" alt="Item 2">
         </div>
         <div class="catalog-item">
             <div class="number">3.</div>
-            <img src="/entries/entry3/img3/pinkradish.png" alt="Item 3">
+            <img src="/entries/entry3/img3/pinkdrink.png" alt="Item 3">
         </div>
         <div class="catalog-item">
             <div class="number">4.</div>
