@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d3ddec;
+}
+
+img {
+    width: 100px;
+    /* Ensure the image width is set */
+    height: 100px;
+    /* Ensure the image height is set */
+    object-fit: cover;
+}
+
+/* Container to position the button with images */
+.button-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Start at normal size */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Grow by 20% */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Shrink back to normal size */
+    }
+}
+
+/* Animation for greenfish */
+.greenfish {
+    animation: moveDiagonal 8s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Animation for whitefish */
+.whitefish {
+    animation: moveVertical 6s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Animation for pinkfish */
+.pinkfish {
+    animation: moveHorizontal 7s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Animation for redfish */
+.redfish {
+    animation: moveHorizontalopposite 7s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Animation for blackfish */
+.blackfish {
+    animation: moveDiagonalup 9s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Diagonal movement animation */
+@keyframes moveDiagonal {
+    0% {
+        left: -100px;
+        /* Start from left outside the screen */
+        top: 100vh;
+        /* Start from bottom */
+    }
+
+    100% {
+        left: 100vw;
+        /* Move to the right edge of the screen */
+        top: -100px;
+        /* Move upwards out of the screen */
+    }
+}
+
+/* Vertical movement animation */
+@keyframes moveVertical {
+    0% {
+        top: 0;
+        /* Start from the top of the screen */
+        left: 40%;
+        /* Start from near the left edge */
+        transform: translateX(-50%);
+        /* Center horizontally */
+    }
+
+    100% {
+        top: 100vh;
+        /* Move to the bottom of the screen */
+        left: 50%;
+        /* Move to the center horizontally */
+        transform: translateX(-50%);
+        /* Center horizontally */
+    }
+}
+
+/* Horizontal movement animation */
+@keyframes moveHorizontal {
+    0% {
+        left: -100px;
+        /* Start off-screen to the left */
+        top: 20%
+    }
+
+    100% {
+        left: 100vw;
+        /* Move to the right edge of the screen */
+        top: 20%
+    }
+}
+
+/* Horizontal opposite movement animation */
+@keyframes moveHorizontalopposite {
+    0% {
+        left: 100vw;
+        /* Start off-screen to the right */
+        top: 80%;
+        /* Position closer to the bottom */
+    }
+
+    100% {
+        left: -100px;
+        /* Move to the left edge of the screen */
+        top: 80%;
+        /* Keep it at the same vertical position during movement */
+    }
+}
+
+/* Diagonalup movement animation */
+@keyframes moveDiagonalup {
+    0% {
+        left: -100px;
+        /* Start from left outside the screen */
+        top: 40vh;
+        /* Start from bottom */
+    }
+
+    100% {
+        left: 100vw;
+        /* Move to the right edge of the screen */
+        top: -30px;
+        /* Move upwards out of the screen */
+    }
+}
