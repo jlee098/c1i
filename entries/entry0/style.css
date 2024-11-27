@@ -165,7 +165,7 @@ img {
     0% {
         left: 100vw;
         /* Start off-screen to the right */
-        top: 80%;
+        top: 20;
         /* Position closer to the bottom */
     }
 
