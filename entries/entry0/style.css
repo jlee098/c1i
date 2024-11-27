@@ -87,7 +87,8 @@ img {
 
 /* Animation for greyfish */
 .greyfish {
-    animation: moveHorizontalopposite2 5s linear infinite, pulse 2s ease-in-out infinite;
+    animation: moveHorizontalopposite2 9s linear infinite, pulse 3s ease-in-out infinite;
+    position: absolute;
 }
 
 /* Diagonal movement animation */
@@ -165,7 +166,7 @@ img {
     0% {
         left: 100vw;
         /* Start off-screen to the right */
-        top: 20;
+        top: 20%;
         /* Position closer to the bottom */
     }
 
