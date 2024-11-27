@@ -87,7 +87,7 @@ img {
 
 /* Animation for grayfish */
 .grayfish {
-    animation: moveHorizontalopposite 5s linear infinite, pulse 2s ease-in-out infinite;
+    animation: moveHorizontalopposite2 5s linear infinite, pulse 2s ease-in-out infinite;
 }
 
 /* Diagonal movement animation */
@@ -145,6 +145,23 @@ img {
 
 /* Horizontal opposite movement animation */
 @keyframes moveHorizontalopposite {
+    0% {
+        left: 100vw;
+        /* Start off-screen to the right */
+        top: 80%;
+        /* Position closer to the bottom */
+    }
+
+    100% {
+        left: -100px;
+        /* Move to the left edge of the screen */
+        top: 80%;
+        /* Keep it at the same vertical position during movement */
+    }
+}
+
+/* Horizontal opposite movement2 animation */
+@keyframes moveHorizontalopposite2 {
     0% {
         left: 100vw;
         /* Start off-screen to the right */
