@@ -85,7 +85,7 @@ img {
     animation: moveDiagonalup 9s linear infinite;
 }
 
-/* Animation for grayfish */
+/* Animation for greyfish */
 .greyfish {
     animation: moveHorizontalopposite2 5s linear infinite, pulse 2s ease-in-out infinite;
 }
